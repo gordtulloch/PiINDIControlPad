@@ -1,0 +1,5 @@
+Gtk-Message: 09:50:41.633: Failed to load module "canberra-gtk-module"
+141 stars, 106 quads selected in the image. 159 database stars, 120 database quads required for the square search field of 0.4°. Search window at 100% based on the number of quads. Step size at 100% of image height
+Using star database v17
+66 of 67 quads selected matching within 0.007 tolerance.  Solution x:=-0.934986*x+ -0.001567*y+ 719.268487,  y:=-0.001603*x+ 0.934485*y+ -715.291681
+Solution found: 01: 45  04.3	+37° 55  42	 Solved in 0.3 sec. Offset was 0.000 deg.	 Used stars up to magnitude: 16.2

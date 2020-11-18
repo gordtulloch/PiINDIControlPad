@@ -1,0 +1,128 @@
+SIMPLE  =                    T                                                  
+BITPIX  =                    8 /8 unsigned int, 16 & 32 int, -32 & -64 real     
+NAXIS   =                    0 /number of axes                                  
+BSCALE  =   1.0000000000000000 /physical = BZERO + BSCALE*array_value           
+BZERO   =   32768.000000000000 /physical = BZERO + BSCALE*array_value           
+DATE-OBS= '2020-10-23T01:12:56' / [ISO 8601] UTC date/time of exposure start    
+EXPTIME =   6.00000000000E+001 / [sec] Duration of exposure                     
+EXPOSURE=   6.00000000000E+001 / [sec] Duration of exposure                     
+SET-TEMP=  -25.000000000000000 /CCD temperature setpoint in C                   
+CCD-TEMP=  -25.042272750000002 /CCD temperature at start of exposure in C       
+XPIXSZ  =   18.000000000000000 /Pixel Width in microns (after binning)          
+YPIXSZ  =   18.000000000000000 /Pixel Height in microns (after binning)         
+XBINNING=                    2 / Binning level along the X-axis                 
+YBINNING=                    2 / Binning level along the Y-axis                 
+XORGSUBF=                  256 /Subframe X position in binned pixels            
+YORGSUBF=                  256 /Subframe Y position in binned pixels            
+READOUTM= 'Monochrome' /        Readout mode of image                           
+FILTER  = 'V       '           / Filter name                                    
+IMAGETYP= 'Light Frame' /       Type of image                                   
+FOCALLEN=   3962.0000000000000 /Focal length of telescope in mm                 
+APTDIA  =   610.00000000000000 /Aperture diameter of telescope in mm            
+APTAREA =   227689.37649324239 /Aperture area of telescope in mm^2              
+SBSTDVER= 'SBFITSEXT Version 1.0' /Version of SBFITSEXT standard in effect      
+SWCREATE= 'MaxIm DL Version 6.16 180309 05MQ5' /Name of software                
+SWSERIAL= '05MQ5-Y575F-9CX35-W3TFY-P498K-58' /Software serial number            
+SITELAT = '44 37 50' /          Latitude of the imaging location                
+SITELONG= '-63 34 52' /         Longitude of the imaging location               
+JD      =   2459145.5506481482 /Julian Date at start of exposure                
+JD-HELIO=   2459145.5559810358 /Heliocentric Julian Date at exposure midpoint   
+OBJECT  = 'ARAND-ID12544-OC145922-GR5384-V' / Target object name                
+TELESCOP= 'Planewave CDK24'    / Telescope name                                 
+INSTRUME= 'Apogee USB/Net'     / Detector instrument name                       
+OBSERVER= 'BGO Observer'       / Observer name                                  
+NOTES   = '        '                                                            
+FLIPSTAT= 'Flip/Rotate 90 CCW'                                                  
+FLIPX   = 'NO      '                                                            
+FLIPY   = 'NO      '                                                            
+OBJCTRA = '01 45 03.90'        / [hms J2000] Target right ascension             
+OBJCTDEC= '+37 56 05.0'        / [dms +N J2000] Target declination              
+AIRMASS =   1.15919826374E+000 / Airmass (multiple of zenithal airmass)         
+JD-MID  =   2459145.5521209491                                                  
+DATE-MID= '2020-10-23T01:15:03'                                                 
+HJD-MID =   2459145.5572869973                                                  
+CSTRETCH= 'Medium  ' /          Initial display stretch mode                    
+CBLACK  =                 1319 /Initial display black level in ADUs             
+CWHITE  =                 1575 /Initial display white level in ADUs             
+PEDESTAL=                 -100 /Correction to add for zero-based ADU            
+SWOWNER = 'David Lane' /        Licensed owner of software                      
+INPUTFMT= 'FITS    ' /          Format of file from which image was read        
+SWMODIFY= 'MaxIm DL Version 6.16 180309 05MQ5' /Name of software                
+HISTORY  Bias Subtraction (2048 x 2048, Bin2 x 2, Temp -25C, Exp Time 0ms)      
+CALSTAT = 'BDF     '                                                            
+HISTORY  Dark Subtraction (2048 x 2048, Bin2 x 2, Temp -25C, Exp Time 300s)     
+HISTORY  Dark-Bias(2048 x 2048,Bin2 x 2,Temp -25C,Exp Time 0ms)                 
+HISTORY  Flat Field (2048 x 2048, Bin2 x 2, Temp -25C, Exp Time 12s)            
+HISTORY  Flat-Bias(2048 x 2048,Bin2 x 2,Temp -25C,Exp Time 0ms)                 
+HISTORY  Flat-Dark (2048 x 2048,Bin2 x 2,Temp -25C,Exp Time 300s)               
+BAYERPAT= 'INVALID ' /          Indicates validity of image's Bayer pattern.    
+SNAPSHOT=                    4 /Number of images combined                       
+MIDPOINT= '2020-10-23T01:14:33' /UT of midpoint of exposure                     
+HISTORY  Combine Images                                                         
+DATE-END= '2020-10-23T01:17:10'                                                 
+TOTALEXP=   240.00000000000000                                                  
+HISTORY File was processed by PinPoint 6.1.3 at 2020-10-23T09:46:21             
+DATE    = '23/10/20'           / [old format] UTC date of exposure start        
+TIME-OBS= '01:12:56'           / [old format] UTC time of exposure start        
+UT      = '01:12:56'           / [old format] UTC time of exposure start        
+TIMESYS = 'UTC     '           / Default time system                            
+RADECSYS= 'FK5     '           / Equatorial coordinate system                   
+RA      = '01 45 03.90'        / [hms J2000] Target right ascension             
+DEC     = '+37 56 05.0'        / [dms +N J2000] Target declination              
+FWHM    =   4.18426103592E+000 / [pixels] Mean Full-Width-Half-Max of image star
+ZMAG    =   1.98925924827E+001 / Mag zero point for 1 sec exposure              
+EQUINOX =               2000.0 / Equatorial coordinates are J2000               
+EPOCH   =               2000.0 / (incorrect but needed by old programs)         
+PA      =   1.80113654311E+002 / [deg, 0-360 CCW] Position angle of plate       
+CTYPE1  = 'RA---TAN'           / first parameter RA  ,  projection TANgential   
+CRVAL1  =  2.626775336430E+001 / X-axis coordinate value                        
+CRPIX1  =  7.685000000000E+002 / X-axis reference pixel                         
+CDELT1  =  2.597187688966E-004 / [deg/pixel] X-axis plate scale                 
+CROTA1  =  9.599222975132E-002 / [deg] Roll angle wrt X-axis                    
+CTYPE2  = 'DEC--TAN'           / second parameter DEC,  projection TANgential   
+CRVAL2  =  3.792824879526E+001 / Y-axis coordinate value                        
+CRPIX2  =  7.685000000000E+002 / Y-axis reference pixel                         
+CDELT2  =  2.595796017793E-004 / [deg/pixel] Y-Axis Plate scale                 
+CROTA2  =  9.821506072142E-002 / [deg] Roll angle wrt Y-axis                    
+CD1_1   =  2.597183873179E-004 / Change in RA---TAN along X-Axis                
+CD1_2   =  4.348943906101E-007 / Change in RA---TAN along Y-Axis                
+CD2_1   = -4.452035103142E-007 / Change in DEC--TAN along X-Axis                
+CD2_2   =  2.595792374724E-004 / Change in DEC--TAN along Y-Axis                
+TR1_0   =   7.68001117019E+002 / [private] X-axis distortion coefficients       
+TR1_1   =   1.53599905588E+003                                                  
+TR1_2   =   1.70948435127E+000                                                  
+TR1_3   =  -1.82820921722E+000                                                  
+TR1_4   =   6.25353828873E-001                                                  
+TR1_5   =  -9.86627592974E+000                                                  
+TR1_6   =   2.99211741433E+000                                                  
+TR1_7   =  -1.35321536624E+000                                                  
+TR1_8   =  -3.64959509318E+000                                                  
+TR1_9   =  -1.27863763778E+001                                                  
+TR1_10  =  -5.98578527139E+000                                                  
+TR1_11  =   3.68116145800E-001                                                  
+TR1_12  =   2.93359786729E+001                                                  
+TR1_13  =   5.31016232604E+000                                                  
+TR1_14  =   3.72082348838E+001                                                  
+TR2_0   =   7.67999996087E+002 / [private] Y-axis distortion coefficients       
+TR2_1   =  -2.45012950190E-006                                                  
+TR2_2   =   1.53599999283E+003                                                  
+TR2_3   =   8.30886758119E+000                                                  
+TR2_4   =  -1.32601935791E+000                                                  
+TR2_5   =   2.23023073715E+000                                                  
+TR2_6   =   7.27877969242E-001                                                  
+TR2_7   =  -2.68483085242E+000                                                  
+TR2_8   =  -4.59257673558E-001                                                  
+TR2_9   =  -4.39925102653E+000                                                  
+TR2_10  =  -4.71985781135E+001                                                  
+TR2_11  =   9.27722456121E+000                                                  
+TR2_12  =   2.52750978002E-001                                                  
+TR2_13  =   1.52723669610E+000                                                  
+TR2_14  =   4.83107388054E-001                                                  
+HISTORY WCS added by PinPoint 6.1.3 at 2020-10-23T09:46:21                      
+HISTORY   Matched 66 stars from the USNO-A2.0 Catalog                           
+HISTORY   Average residual was 0.38 arc-seconds                                 
+PLTSOLVD=                    T / ASTAP internal solver      
+CUNIT1  = 'deg     '           / Unit of coordinates                            
+COMMENT 6  Solved in 0.3 sec. Offset was 0.000 deg.
+COMMENT cmdline:/usr/local/bin/astap -r 50 -f solve.fits
+END                                                                             
