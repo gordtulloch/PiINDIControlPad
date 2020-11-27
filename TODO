@@ -1,0 +1,7 @@
+TODO:
+
+Calibration - make a Sync button that will prompt the user to centre the current object, set the save the current coords, do a solve, and retain a delta between the scope and the solved coords as an offet between the scope centre of field and the platesolver so the platesolver camera doesn't need to be precisely centered on the scope centre of field.
+
+Make the Solve button a toggle so it can be turned off to accommodate manually centring the telescope with a joystick and not having it platesolve back to the old position every time, annoying when you're not calibrated 100%
+
+Prev/Next on Tours
