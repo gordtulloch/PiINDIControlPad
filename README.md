@@ -12,12 +12,29 @@ To calibate the platesolve the user hits the Sync button - the program will save
 INSTALLATION
 
 On Debian or Ubuntu:
-	sudo apt-add-repository ppa:mutlaqja/ppa
-	sudo apt-get update
-	sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3-tk
 
-	git clone https://github.com/gordtulloch/PiINDIControlPad.git
-	cd PiINDIControlPad
-	pip3 install --user pipenv
-	pipenv install astropy pyindi-client numpy tzlocal tk
+    wget https://downloads.sourceforge.net/project/astap-program/linux_installer/astap_amd64.deb
+    wget https://downloads.sourceforge.net/project/astap-program/star_databases/h17_star_database_mag17_astap.deb
+    sudo dpkg -i astap_amd64.deb h17_star_database_mag17_astap.deb
+    sudo apt-add-repository ppa:mutlaqja/ppa
+    sudo apt-get update
+    sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3-tk
 
+    git clone https://github.com/gordtulloch/PiINDIControlPad.git
+    cd PiINDIControlPad
+    pip3 install --user pipenv
+    pipenv install astropy pyindi-client numpy tzlocal tk
+
+You can run the simulators from the command line to test with:
+
+    indiserver indi_simulator_telescope indi_simulator_ccd
+	
+You probably want to do this in a seperate terminal window to make it easy to see logging statements from indiserver.
+
+Run the programs with:
+
+Mini interface:
+    pipenv run python mini.py
+
+Control pad interface:
+    pipenv run python controlpad.py
