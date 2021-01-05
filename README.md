@@ -23,7 +23,7 @@ On Debian or Ubuntu:
     git clone https://github.com/gordtulloch/PiINDIControlPad.git
     cd PiINDIControlPad
     pip3 install --user pipenv
-    pipenv install astropy pyindi-client numpy tzlocal tk
+    pipenv install astropy pyindi-client numpy tzlocal
 
 You can run the simulators from the command line to test with:
 
