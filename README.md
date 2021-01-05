@@ -8,3 +8,16 @@ This software is intended to not only provide a control panel for a telescope bu
 In general when a user enters an object into the control panel, the telescope will check that it is above the horizon (Altitude > 15deg) then slew the telescope to that object using the INDI telescope driver. In the meantime, a flag is set that "The telescope moved" so that the next time through the main loop, a platesolve in initiated. The platesolve takes an image of the sky through the camera specified in the script (in my case a Raspberry Pi PiCam V2 directly attached to the Raspberry Pi with a long lens) and attempts to do a platesolve to determine the actual coordinates that the telescope is pointed to. Once these coordinates are determined an offset is calculated and if larger than a preset value (normally 30 arcsecs) an adjusted slew command is sent to the telescope. The process repeats until the object in the telescope field is within the preset value of arcsecs of the object whereupon the telescope will stop platesolving and track the object. A user can initiate a solve from the control panel in case the scope is bumped etc.
 
 To calibate the platesolve the user hits the Sync button - the program will save the current object coords, the solver will run and determine the offset of the telescope from the computed centre RA,Dec of the field of the camera doing the solving. This offset will be applied when determining whether the telescope needs to be slewed so the user does not have to centre the camera on the telescope field exactly to get good telescope positioning.
+
+INSTALLATION
+
+On Debian or Ubuntu:
+	sudo apt-add-repository ppa:mutlaqja/ppa
+	sudo apt-get update
+	sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3-tk
+
+	git clone https://github.com/gordtulloch/PiINDIControlPad.git
+	cd PiINDIControlPad
+	pip3 install --user pipenv
+	pipenv install astropy pyindi-client numpy tzlocal tk
+
