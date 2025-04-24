@@ -11,19 +11,18 @@ To calibate the platesolve the user hits the Sync button - the program will save
 
 INSTALLATION
 
-On Debian or Ubuntu:
+On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to install ASTAP on your platform, then:
 
-    wget https://downloads.sourceforge.net/project/astap-program/linux_installer/astap_amd64.deb
-    wget https://downloads.sourceforge.net/project/astap-program/star_databases/h17_star_database_mag17_astap.deb
-    sudo dpkg -i astap_amd64.deb h17_star_database_mag17_astap.deb
     sudo apt-add-repository ppa:mutlaqja/ppa
     sudo apt-get update
-    sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3-tk
-
+    sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3 python3-tk python-is-python3 python3-pip python3-venv cmake python3-setuptools python3-dev libindi-dev swig libcfitsio-dev libnova-dev mysqlserver
+    
     git clone https://github.com/gordtulloch/PiINDIControlPad.git
     cd PiINDIControlPad
-    pip3 install --user pipenv
-    pipenv install astropy pyindi-client numpy tzlocal
+    python -m venv .venv
+    source .venv/bin/activate
+    pip3 install "git+https://github.com/indilib/pyindi-client.git@674706f#egg=pyindi-client"
+    pip install astropy numpy tzlocal pytz photutils mysql-connector-python-rf
 
 You can run the simulators from the command line to test with:
 
@@ -34,7 +33,9 @@ You probably want to do this in a seperate terminal window to make it easy to se
 Run the programs with:
 
 Mini interface:
-    pipenv run python mini.py
+    source .venv/bin/activate
+    python mini.py
 
 Control pad interface:
-    pipenv run python controlpad.py
+    source .venv/bin/activate
+    python controlpad.py
