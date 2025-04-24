@@ -233,8 +233,8 @@ def stop():
 ####################################################################################### 
 try:
     connection = mysql.connector.connect(host='localhost',
-                                         database='ntt',
-                                         user='ntt',
+                                         database='pyindicontrolpad',
+                                         user='pyindicontrolpad',
                                          password='secret')
 
 except Error as e:

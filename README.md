@@ -16,6 +16,13 @@ On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to ins
     sudo apt-add-repository ppa:mutlaqja/ppa
     sudo apt-get update
     sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3 python3-tk python-is-python3 python3-pip python3-venv cmake python3-setuptools python3-dev libindi-dev swig libcfitsio-dev libnova-dev mysqlserver
+
+    sudo mysql
+    CREATE DATABASE pyindicontrolpanel;
+    CREATE USER 'pyindicontrolpanel'@'localhost' IDENTIFIED BY 'secret';
+    GRANT ALL PRIVILEGES ON your_database_name.* TO 'pyindicontrolpanel'@'localhost';
+    FLUSH PRIVILEGES;
+    EXIT;
     
     git clone https://github.com/gordtulloch/PiINDIControlPad.git
     cd PiINDIControlPad
