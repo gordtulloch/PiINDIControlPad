@@ -15,7 +15,7 @@ On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to ins
 
     sudo apt-add-repository ppa:mutlaqja/ppa
     sudo apt-get update
-    sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3 python3-tk python-is-python3 python3-pip python3-venv cmake python3-setuptools python3-dev libindi-dev swig libcfitsio-dev libnova-dev mysqlserver
+    sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3 python3-tk python-is-python3 python3-pip python3-venv cmake python3-setuptools python3-dev libindi-dev swig libcfitsio-dev libnova-dev mysql-server
 
     sudo mysql
     CREATE DATABASE pyindicontrolpad;
@@ -30,7 +30,7 @@ On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to ins
     python -m venv .venv
     source .venv/bin/activate
     pip3 install "git+https://github.com/indilib/pyindi-client.git@674706f#egg=pyindi-client"
-    pip install astropy numpy tzlocal pytz photutils mysql-connector-python-rf
+    pip install astropy numpy tzlocal pytz photutils mysql-connector-python-rf 
 
 You can run the simulators from the command line to test with:
 
