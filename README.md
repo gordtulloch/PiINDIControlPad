@@ -18,10 +18,10 @@ On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to ins
     sudo apt install git indi-full gsc kstars-bleeding swig libcfitsio-dev libnova-dev python3 python3-tk python-is-python3 python3-pip python3-venv cmake python3-setuptools python3-dev libindi-dev swig libcfitsio-dev libnova-dev mysqlserver
 
     sudo mysql
-    CREATE DATABASE pyindicontrolpanel;
-    CREATE USER 'pyindicontrolpanel'@'localhost' IDENTIFIED BY 'secret';
+    CREATE DATABASE pyindicontrolpad;
+    CREATE USER 'pyindicontrolpad'@'localhost' IDENTIFIED BY 'secret';
     ALTER USER 'pyindicontrolpad'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secret';
-    GRANT ALL PRIVILEGES ON pyindicontrolpad.* TO 'pyindicontrolpanel'@'localhost';
+    GRANT ALL PRIVILEGES ON pyindicontrolpad.* TO 'pyindicontrolpad'@'localhost';
     FLUSH PRIVILEGES;
     EXIT;
     
