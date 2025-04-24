@@ -20,7 +20,8 @@ On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to ins
     sudo mysql
     CREATE DATABASE pyindicontrolpanel;
     CREATE USER 'pyindicontrolpanel'@'localhost' IDENTIFIED BY 'secret';
-    GRANT ALL PRIVILEGES ON your_database_name.* TO 'pyindicontrolpanel'@'localhost';
+    ALTER USER 'pyindicontrolpad'@'localhost' IDENTIFIED WITH mysql_native_password BY 'secret';
+    GRANT ALL PRIVILEGES ON pyindicontrolpad.* TO 'pyindicontrolpanel'@'localhost';
     FLUSH PRIVILEGES;
     EXIT;
     
@@ -41,8 +42,10 @@ Run the programs with:
 
 Mini interface:
     source .venv/bin/activate
+
     python mini.py
 
 Control pad interface:
     source .venv/bin/activate
+
     python controlpad.py
