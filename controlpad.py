@@ -235,7 +235,7 @@ try:
     connection = mysql.connector.connect(host='localhost',
                                          database='ntt',
                                          user='ntt',
-                                         password='Jvm123ed!')
+                                         password='secret')
 
 except Error as e:
     print("Unable to connect to MYSQL", e)
