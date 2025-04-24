@@ -30,7 +30,7 @@ On Debian or Ubuntu, follow directions on https://www.hnsky.org/astap.htm to ins
     python -m venv .venv
     source .venv/bin/activate
     pip3 install "git+https://github.com/indilib/pyindi-client.git@674706f#egg=pyindi-client"
-    pip install astropy numpy tzlocal pytz photutils mysql-connector-python-rf 
+    pip install astropy numpy tzlocal pytz photutils mysql-connector-python
 
 You can run the simulators from the command line to test with:
 

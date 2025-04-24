@@ -238,7 +238,8 @@ try:
                                          password='secret')
 
 except Error as e:
-    print("Unable to connect to MYSQL", e)
+    print("Unable to connect to MYSQL -- ", e)
+    exit(0)
 
 
 
@@ -468,19 +469,19 @@ while (1):        # Loop forever
     root.update()
     
     # See if we are slewing or do we need a solve?
-    if (telescope_radec.s==PyIndi.IPS_BUSY):
+    telescope_status = device_telescope.getSwitch("TELESCOPE_STATUS")
+    while not telescope_status:
+        time.sleep(0.5)
+        telescope_status = device_telescope.getSwitch("TELESCOPE_STATUS")
+
+    if telescope_status[0].s == PyIndi.ISS_ON:  # Slewing
         currStatusText.configure(text="SLEWING")
         root.update()
-        solveOk=False  # We'll need to do a solve after the motion stops
+        solveOk = False  # We'll need to do a solve after the motion stops
     else:
         # Update the status
         currStatusText.configure(text="TRACKING")
         root.update()
-        
-        # See if User wants a solve by creating a solve.requested file
-        if os.path.exists('solve.requested'):
-            os.remove('solve.requested')
-            solveOk = False
 
         # Otherwise if we're good, don't continue on to solve
         if solveOk:
