@@ -20,8 +20,7 @@ import os
 import subprocess as subp
 import math
 import mysql.connector
-from mysql.connector import Error
-from mysql.connector import errorcode
+from mysql.connector.errors import Error
 from datetime import datetime
 from tzlocal import get_localzone
 
